@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
-    @IBOutlet var managerButton: UIButton!
+    @IBOutlet var startButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         redLightView.layer.cornerRadius = 50
         yellowLightView.layer.cornerRadius = 50
         greenLightView.layer.cornerRadius = 50
-        managerButton.layer.cornerRadius = 10
+        startButton.layer.cornerRadius = 10
         
         redLightView.alpha = 0.3
         yellowLightView.alpha = 0.3
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func managerButtonPressed() {
-        managerButton.setTitle("Next", for: .normal)
+        startButton.setTitle("Next", for: .normal)
         
         if redLightView.alpha != 1 && yellowLightView.alpha != 1 {
             
