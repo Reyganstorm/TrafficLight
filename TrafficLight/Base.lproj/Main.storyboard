@@ -49,6 +49,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="managerButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xQU-Sr-Pu4"/>
+                                    <action selector="startButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1m-P9-16p"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +69,13 @@
                             <constraint firstItem="DZK-EJ-NeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qU3-P0-80K"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="w5x-Bx-7S8" id="to8-eJ-Dzx"/>
+                        <outlet property="managerButton" destination="DZK-EJ-NeF" id="BPA-fj-0HQ"/>
+                        <outlet property="redLightView" destination="Lgl-XY-WDx" id="Sr9-DC-aiq"/>
+                        <outlet property="startButton" destination="DZK-EJ-NeF" id="cV3-1N-9fD"/>
+                        <outlet property="yellowLightView" destination="1e1-Mu-WxO" id="WaB-A4-79t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
